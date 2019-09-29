@@ -7,6 +7,12 @@ miKasa is a web app designed for beginner Japanese and/or Spanish language learn
 ### API
 The Watson Text-to-Speech API on IBM Cloud will read a randomly generated vocubulary word and the user will have to click the corresponding item.
 
+### Wireframe
+![vocab](https://github.com/PurpleTatsu/Hidden-Objects-Language-Game/blob/master/vocab%20list.jpg?raw=true "Vocabulary list")
+
+
+
+
 ### Features
 1) **Menu selection** to choose Japanese or Spanish.
 2) **Vocabulary lists** to study/review.
