@@ -4,7 +4,8 @@ apiURL = "https://stream.watsonplatform.net/text-to-speech/api"
 
 
 
-const list = document.querySelector("#sprite-layer");
+let button = document.querySelector("#sprite-layer, img");
+
 
 
 const checkAlert = async function () {
@@ -18,20 +19,30 @@ const checkAlert = async function () {
   spriteLayer.innerHTML = `<img src="${pokeSprite}">`
 
 
-  // const pokemonImg5 = document.querySelector('#sprite-layer');
-  // pokemonImg5.innerHTML = `<img src="${pokeSprite}">`
+  let list = document.querySelector("#list");
+  let findList = document.createElement("li");
+  let pokeName = response.data.name;
+  list.appendChild(findList);
+  findList.innerHTML = pokeName;
 
 
-  // let pokemonImg1 = `<img src="${pokeSprite}">`
-  // pokeNode.appendChild(pokemonImg1)
 
-  // document.querySelector("#sprite-layer").appendChild(pokeNode);
 };
-
 checkAlert()
 
+button.addEventListener('click', async () => {
+  // if (document.querySelector("#button").clicked === true) {
+  //   score++ && pokeSprite.style.display === "none";
+  // }
+  // else { console.log("did you click the pokemon?") }
+  let score = 0;
+  while (score < 0) {
+    let totalScore = document.querySelector("#button").clicked = score++;
+  }
+  console.log(score, "poke clicked");
+});
 
 
 
 
-// sprites.front_default
+// if clicked score++ and display: none
