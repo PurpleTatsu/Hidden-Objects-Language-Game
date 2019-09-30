@@ -3,41 +3,26 @@ body{
   background: #5def92;
 }
 #house{
-  height: 100%;;
+  background: url("/Users/Tatsu/SEI/project-test/design.tutsplus-nbg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 900px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto ;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto ;
 }
-#room{
-  /* position: relative; */
-  /* display: none; */
-}
+
 header, footer{
   background: gray;
 }
-#couch{
-  position: fixed;
 
-  clip-path: polygon(38% 50%, 40% 57%, 59% 65%, 63% 63%, 67% 66%, 68% 75%, 52% 83%, 21% 68%, 21% 59%, 27% 54%);
+#sprite-layer{
+  grid-column-start: 5;
+  grid-row-start: 5;
+  }
 
-}
-#tv{
-  position: fixed;
-
-  clip-path: polygon(59% 21%, 82% 31%, 81% 50%, 58% 39%);
-  
-}
-#table{
-  position: fixed;
-
-  clip-path: polygon(57% 51%, 73% 59%, 70% 60%, 64% 64%, 51% 58%, 50% 55%);
-  
-}
-#plant{
-  position: fixed;
-
-  clip-path: polygon(59% 45%, 60% 51%, 61% 56%, 56% 56%, 57% 52%, 55% 49%);
-  
-
-}
-/* 
-body-family{
-  display: flex;
-} */
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 11;
+  }
