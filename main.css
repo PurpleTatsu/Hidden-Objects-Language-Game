@@ -1,0 +1,39 @@
+body{
+  height: 100%;
+  background: #5def92;
+}
+#house{
+  height: 100%;;
+}
+#room{
+  /* position: relative; */
+  /* display: none; */
+}
+header, footer{
+  background: gray;
+}
+#couch{
+  position: fixed;
+
+  clip-path: polygon(38% 50%, 40% 57%, 59% 65%, 63% 63%, 67% 66%, 68% 75%, 52% 83%, 21% 68%, 21% 59%, 27% 54%);
+
+}
+#tv{
+  position: fixed;
+
+  clip-path: polygon(59% 21%, 82% 31%, 81% 50%, 58% 39%);
+  
+}
+#table{
+  position: fixed;
+
+  clip-path: polygon(57% 51%, 73% 59%, 70% 60%, 64% 64%, 51% 58%, 50% 55%);
+  
+}
+#plant{
+  position: fixed;
+
+  clip-path: polygon(59% 45%, 60% 51%, 61% 56%, 56% 56%, 57% 52%, 55% 49%);
+  
+
+}

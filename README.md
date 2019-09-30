@@ -10,9 +10,6 @@ The Watson Text-to-Speech API on IBM Cloud will read a randomly generated vocubu
 ### Wireframe
 ![vocab](https://github.com/PurpleTatsu/Hidden-Objects-Language-Game/blob/master/vocab%20list.jpg?raw=true "Vocabulary list")
 
-
-
-
 ### Features
 1) **Menu selection** to choose Japanese or Spanish.
 2) **Vocabulary lists** to study/review.
@@ -23,4 +20,6 @@ The Watson Text-to-Speech API on IBM Cloud will read a randomly generated vocubu
 ### Stretch goals 
 1) Main screen animations to move papers, revealing vocabulary lists and not requiring users to click link to a new page.
 
-2) Additional languages the API supports: French, Italian, German.
+2) Additional rooms for more vocabulary.
+
+3) Additional languages the API supports: French, Italian, German.
