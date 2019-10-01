@@ -3,28 +3,37 @@ body{
   background: #5def92;
 }
 #house{
-  background: url("/Users/Tatsu/SEI/project-test/design.tutsplus-nbg.png");
+  /* background: url("/Users/Tatsu/SEI/project-test/design.tutsplus-nbg.png"); */
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 900px;
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto ;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto ;
 }
 div{
+  display: fixed;
   grid-column-start: 2;
   grid-row-start: 2;
 }
 
+header{ 
+  position: fixed;
+  top: 0px;
+  height: 60px;
+  width: 100%;
+  left: 0px;
 
+}
 header, footer{
   background: gray;
 }
 
-/* #sprite-layer{
-  grid-column-start: 5;
-  grid-row-start: 5;
-  } */
+#sprite-layer img{
+  grid-column-start: start;
+  grid-row-start: start;
+  }
 
   footer {
     grid-column-start: 1;
@@ -43,3 +52,18 @@ header, footer{
 
 
   }
+
+  input{
+    width:5%;
+  }
+
+  footer{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+    text-align: center;
+  }
+
+  input[type=checkbox]:checked img {
+display: none;
+ }
