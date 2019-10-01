@@ -13,11 +13,11 @@ const checkAlert = async function () {
   let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokeId}`);
   const pokeSprite = response.data.sprites.front_default;
 
+
   let spriteLayer = document.querySelector('#sprite-layer');
   let pokemonImg = document.createElement("div");
   spriteLayer.appendChild(pokemonImg);
-  spriteLayer.innerHTML = `<img src="${pokeSprite}">`
-
+  pokemonImg.innerHTML = `<img src="${pokeSprite}">`
 
   let list = document.querySelector("#list");
   let findList = document.createElement("li");
@@ -28,7 +28,9 @@ const checkAlert = async function () {
 
 
 };
+
 checkAlert()
+
 
 button.addEventListener('click', async () => {
   // if (document.querySelector("#button").clicked === true) {
@@ -36,11 +38,13 @@ button.addEventListener('click', async () => {
   // }
   // else { console.log("did you click the pokemon?") }
   let score = 0;
-  while (score < 0) {
-    let totalScore = document.querySelector("#button").clicked = score++;
+  while (score < 1) {
+    score++
+    console.log(score, "poke clicked");
   }
-  console.log(score, "poke clicked");
-});
+})
+
+
 
 
 
