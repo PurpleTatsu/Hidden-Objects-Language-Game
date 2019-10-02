@@ -64,6 +64,7 @@ header, footer{
     text-align: center;
   }
 
-  input[type=checkbox]:checked img {
-display: none;
- }
+.pokeId1 {
+  width: 96px;
+  background: blue;
+}

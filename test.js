@@ -2,17 +2,17 @@
 
 
 const checkAlert = async function () {
-  const pokemonArray = [(Math.floor(Math.random() * 152)), (Math.floor(Math.random() * 152)), (Math.floor(Math.random() * 152)), (Math.floor(Math.random() * 152)), (Math.floor(Math.random() * 152)), (Math.floor(Math.random() * 152)), (Math.floor(Math.random() * 152))]
-  const randArray = pokemonArray[Math.floor(Math.random() * pokemonArray.length)];
+  const pokemonArray = [(Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152))]
+  const randArray = pokemonArray[Math.ceil(Math.random() * pokemonArray.length)];
 
   for (i = 0; i < pokemonArray.length; i++) {
     let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonArray[i]}`);
 
     const pokeSprite = response.data.sprites.front_default;
 
-    let pokemonLayer = document.querySelector('#pokemon');
+    let pokemonLayer = document.querySelector('#sprite-layer');
     let pokemonImg = document.createElement("div");
-    pokemonImg.classList.add("pokeId1");
+    pokemonImg.classList.add("pokeId");
     pokemonLayer.appendChild(pokemonImg);
     pokemonImg.innerHTML = `<img src="${pokeSprite}">`
 
@@ -26,13 +26,15 @@ const checkAlert = async function () {
   }
 
   //SCORE
-  let pokeId1Button = document.querySelector("#pokemon");
+
+  var pokeIdClicked = document.getElementsByClassName(`pokeId`);
   let score = 0;
-  pokeId1Button.addEventListener('click', async () => {
-    score++
-    console.log(score, "poke clicked");
-  });
-  
+  for (let i = 0; i < pokeIdClicked.length; i++) {
+    pokeIdClicked[i].addEventListener('click', function () {
+      score++
+      console.log(score, "poke clicked");
+    });
+  }
   // document.addEventListener('click', async (event) => {
 
   //   let newPokemonClass = document.querySelector('#pokemon');
