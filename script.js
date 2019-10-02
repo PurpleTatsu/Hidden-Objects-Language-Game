@@ -117,14 +117,15 @@ const checkAlert = async function () {
   let pokeId1Button = document.querySelector(".pokeId1");
   let score = 0;
   pokeId1Button.addEventListener('click', async () => {
-    score++
-    console.log(score, "poke clicked");
+    score++;
+    console.log(score);
 
   });
 
   let pokeId2Button = document.querySelector(".pokeId2");
   pokeId2Button.addEventListener('click', async () => {
     score++
+
     console.log(score, "poke clicked");
   });
 
@@ -158,10 +159,15 @@ const checkAlert = async function () {
     console.log(score, "poke clicked");
   });
 
+  // window.addEventListener('click', (event) => {
+  //   let newPokemonClass = document.querySelectorAll('div');
+  //   newPokemonClass.className += '.pokemonAll';
+  //   // console.log('clicked', event.path[0])
+  //   checkAlert(newPokemonClass).innerHTML.remove()
+  // });
 
 }
 checkAlert()
-
 
 
 
