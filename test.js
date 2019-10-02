@@ -36,14 +36,23 @@ const checkAlert = async function () {
     });
   }
   // document.addEventListener('click', async (event) => {
-
-  //   let newPokemonClass = document.querySelector('#pokemon');
-  //   newPokemonClass.className += '.pokemonAll';
+  //   let newPokemonClass = document.querySelector('.pokeId');
+  //   newPokemonClass.className += ' pokemonDisappear';
   //   console.log('clicked', event.path[0])
-  //   checkAlert(newPokemonClass).innerHTML.remove()
+  //   checkAlert(".pokeId pokemonDisappear").innerHTML.remove();
 
   // });
-
+  document.addEventListener('click', async () => {
+    var pokeClicked = document.querySelector('.pokeId');
+    pokeClicked.remove();
+  });
+  // const pokeClicked = () => {
+  //   pokeId.classLast.add("clicked")
+  //   const blastClean = () => {
+  //     body.removeChild(pokeId)
+  //   }
+  //   checkWinner();
+  // }
 
 };
 checkAlert()
