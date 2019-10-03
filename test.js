@@ -1,6 +1,6 @@
 //randomly generates 7 Pokemon sprites and names
 
-
+alert(`You have 7 clicks to find as many Pokemon from the list as you can. But be careful, you'll be penalized for misclicks.`)
 const checkAlert = async function () {
   const pokemonArray = [(Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152))]
   const randArray = pokemonArray[Math.ceil(Math.random() * pokemonArray.length)];
@@ -32,27 +32,15 @@ const checkAlert = async function () {
   for (let i = 0; i < pokeIdClicked.length; i++) {
     pokeIdClicked[i].addEventListener('click', function () {
       score++
-      console.log(score, "poke clicked");
+      alert(score, "poke clicked");
     });
   }
-  // document.addEventListener('click', async (event) => {
-  //   let newPokemonClass = document.querySelector('.pokeId');
-  //   newPokemonClass.className += ' pokemonDisappear';
-  //   console.log('clicked', event.path[0])
-  //   checkAlert(".pokeId pokemonDisappear").innerHTML.remove();
-
-  // });
+  //remove pokemon
   document.addEventListener('click', async () => {
     var pokeClicked = document.querySelector('.pokeId');
     pokeClicked.remove();
   });
-  // const pokeClicked = () => {
-  //   pokeId.classLast.add("clicked")
-  //   const blastClean = () => {
-  //     body.removeChild(pokeId)
-  //   }
-  //   checkWinner();
-  // }
+
 
 };
 checkAlert()

@@ -1,70 +1,70 @@
 body{
-  height: 100%;
+  width: 100vw;
+  height: 2083px;
   background: #5def92;
-}
-#house{
-  /* background: url("/Users/Tatsu/SEI/project-test/design.tutsplus-nbg.png"); */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto ;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto ;
 }
-div{
-  display: fixed;
-  grid-column-start: 2;
+#house{
+  background: url("/Users/Tatsu/Downloads/pokesprites/poke-sprites.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+
+  grid-column-start: 1;
+  grid-column-end: end;
   grid-row-start: 2;
+  grid-row-end: end;
+  
 }
 
-/* header{ 
-  position: fixed;
-  top: 0px;
-  height: 60px;
-  width: 100%;
-  left: 0px;
-
-} */
 header, footer{
   background: gray;
 }
 
-#sprite-layer img{
-  grid-column-start: start;
-  grid-row-start: start;
-  }
-
-  footer {
-    grid-column-start: 1;
-    grid-column-end: 11;
-    grid-row-start: 11;
-  }
-
-  #list{
-
-    background: gray;
-    grid-column-start: 9;
-    grid-column-end: 10.5;
-    grid-row-start: 6;
-    grid-row-end: 10;
-    text-transform: uppercase;
-
-
-  }
-
-  input{
-    width:5%;
-  }
-
-  footer{
-    position: fixed;
-  left: 0;
-  bottom: 0;
-    text-align: center;
-  }
-
-.pokeId1 {
-  width: 96px;
-  background: blue;
+header{  
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
+
+#list{
+  text-align: center;
+  background: gray;
+  grid-column-start: 10;
+  grid-column-end: 11;
+  grid-row-start: 3;
+  text-transform: uppercase;
+}
+
+#list li {
+  list-style-type: none;
+
+}
+
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 11;
+  grid-row-end: end;
+  text-align: center;
+}
+footer img{
+  width: 100px;
+}
+  
+
+.pokeId, .pokeId img{
+  width: 300px;
+}
+
+#sprite-layer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+}
+
