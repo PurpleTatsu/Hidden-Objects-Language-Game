@@ -1,6 +1,6 @@
 //randomly generates 7 Pokemon sprites and names
 
-alert(`You have 7 clicks to find as many Pokemon from the list as you can. But be careful, you'll be penalized for misclicks.`)
+alert(`Find all 7 Pokemon.`)
 const checkAlert = async function () {
   const pokemonArray = [(Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152))]
   const randArray = pokemonArray[Math.ceil(Math.random() * pokemonArray.length)];
@@ -12,7 +12,7 @@ const checkAlert = async function () {
 
     let pokemonLayer = document.querySelector('#sprite-layer');
     let pokemonImg = document.createElement("div");
-    pokemonImg.classList.add("pokeId");
+    pokemonImg.classList.add("pokeClass");
     pokemonLayer.appendChild(pokemonImg);
     pokemonImg.innerHTML = `<img src="${pokeSprite}">`
 
@@ -23,23 +23,31 @@ const checkAlert = async function () {
     list.appendChild(findList);
     findList.appendChild(findListItem)
     findListItem.innerHTML = pokeName;
+
+
+
+    pokemonImg.addEventListener('click', async () => {
+
+      pokemonImg.remove();
+    });
   }
 
   //SCORE
 
-  var pokeIdClicked = document.getElementsByClassName(`pokeId`);
+  let pokeClassClicked = document.getElementsByClassName(`pokeClass`);
   let score = 0;
-  for (let i = 0; i < pokeIdClicked.length; i++) {
-    pokeIdClicked[i].addEventListener('click', function () {
+  for (let i = 0; i < pokeClassClicked.length; i++) {
+    pokeClassClicked[i].addEventListener('click', function () {
       score++
-      alert(score, "poke clicked");
+      // alert(score, "poke clicked");
+      document.querySelector(`#list h4`).innerHTML = "Score: " + score;
+      if (score === 7) {
+        alert(`You found them all!`)
+      }
     });
   }
   //remove pokemon
-  document.addEventListener('click', async () => {
-    var pokeClicked = document.querySelector('.pokeId');
-    pokeClicked.remove();
-  });
+
 
 
 };

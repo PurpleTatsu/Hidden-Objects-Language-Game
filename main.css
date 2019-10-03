@@ -9,13 +9,12 @@ body{
 #house{
   background: url("/Users/Tatsu/Downloads/pokesprites/poke-sprites.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: auto;
-
+  /* background-attachment: fixed; */
+  background-size: 120vh;
   grid-column-start: 1;
   grid-column-end: end;
   grid-row-start: 2;
-  grid-row-end: end;
+  grid-row-end: 11;
   
 }
 
@@ -45,26 +44,37 @@ header{
 }
 
 
-footer {
-  grid-column-start: 1;
-  grid-column-end: end;
-  grid-row-start: 11;
-  grid-row-end: end;
-  text-align: center;
-}
-footer img{
-  width: 100px;
+
+
+#sprite-layer {
+  display: flex;
+  
 }
   
 
-.pokeId, .pokeId img{
+.pokeClass{
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pokeClass img{
   width: 300px;
 }
 
-#sprite-layer{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  display: inline-block;
+a img {
+  height: 100%;
+}
+
+
+footer {
+  position: absolute;
+ bottom: 0;
+ width: 100%;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
