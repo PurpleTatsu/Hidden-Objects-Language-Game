@@ -42,7 +42,7 @@ const checkAlert = async function () {
       // alert(score, "poke clicked");
       document.querySelector(`#list h4`).innerHTML = "Score: " + score;
       if (score === 7) {
-        alert(`You found them all!`)
+        alert(`Pokemon GETTO!`)
       }
     });
   }

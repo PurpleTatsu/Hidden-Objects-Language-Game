@@ -78,3 +78,50 @@ footer {
   align-items: center;
 }
 
+@media screen and (min-width: 700px) {
+  header {
+    text-align: center;
+    height: 150px;
+    padding: 0px;
+    margin: 0px;
+  }
+  body{
+  position: relative;
+  display: grid;
+  grid-template-columns: 10 10 10 10 10 10 10 10 10 10 ;
+  grid-template-rows: 150px auto auto auto auto auto auto auto auto auto ;
+  }
+  .pokeClass, .pokeClass img{
+    width: 90px;
+  }
+  #house{
+    background: url("/Users/Tatsu/Downloads/pokesprites/poke-sprites.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 80vh;
+  }
+  #list{
+    height: 350px;
+    width: 250px ;
+    text-align: center;
+    background: gray;
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    text-transform: uppercase;
+  }
+  ul{
+    padding: 0px;
+  }
+  footer {
+    grid-column-start: 1;
+    /* grid-column-end: 4; */
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
