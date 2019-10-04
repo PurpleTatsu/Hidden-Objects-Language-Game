@@ -1,10 +1,10 @@
-//randomly generates 7 Pokemon sprites and names
 
 alert(`Find all 7 Pokemon.`)
 const checkAlert = async function () {
-  const pokemonArray = [(Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152))]
-  const randArray = pokemonArray[Math.ceil(Math.random() * pokemonArray.length)];
+  const pokemonArray = [(Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152)), (Math.ceil(Math.random() * 152))] //generates random numbers to correspond to Pokemon ids
 
+  const randArray = pokemonArray[Math.ceil(Math.random() * pokemonArray.length)];
+  //loops through Pokemon array to grab sprites and names
   for (i = 0; i < pokemonArray.length; i++) {
     let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonArray[i]}`);
 
@@ -16,6 +16,7 @@ const checkAlert = async function () {
     pokemonLayer.appendChild(pokemonImg);
     pokemonImg.innerHTML = `<img src="${pokeSprite}">`
 
+    //creates list of Pokemon names
     let list = document.querySelector("#list");
     let findList = document.createElement("ul");
     let findListItem = document.createElement("li");
@@ -25,7 +26,7 @@ const checkAlert = async function () {
     findListItem.innerHTML = pokeName;
 
 
-
+    //removes sprite after clicking
     pokemonImg.addEventListener('click', async () => {
 
       pokemonImg.remove();
@@ -33,7 +34,6 @@ const checkAlert = async function () {
   }
 
   //SCORE
-
   let pokeClassClicked = document.getElementsByClassName(`pokeClass`);
   let score = 0;
   for (let i = 0; i < pokeClassClicked.length; i++) {
@@ -46,7 +46,6 @@ const checkAlert = async function () {
       }
     });
   }
-  //remove pokemon
 
 
 
