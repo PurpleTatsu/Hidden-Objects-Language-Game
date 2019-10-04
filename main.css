@@ -54,7 +54,10 @@ header{
   width: 300px;
   display: flex;
   align-self: flex-end;
+  flex-wrap: wrap;
   position: relative;
+  align-items: baseline;
+  align-content: space-around;
 }
 
 .pokeClass img{
@@ -79,15 +82,23 @@ footer {
 }
 
 
-@media only screen and (max-width: 700px) 
+@keyframes rotate {
+  100%  {transform: rotate(360deg);}
+}
+
+
+
+
+@media only screen and (max-width: 770px) 
 {
   header {
     text-align: center;
-    height: 150px;
+    height: 20vh;
     padding: 0px;
     margin: 0px;
   }
-  body{
+  body
+  {
   position: relative;
   display: grid;
   grid-template-columns: 10 10 10 10 10 10 10 10 10 10 ;
@@ -95,11 +106,11 @@ footer {
   }
   .pokeClass, .pokeClass img{
     width: 90px;
+
   }
   #house{
     background: url("https://github.com/PurpleTatsu/Hidden-Objects-Language-Game/blob/master/images/poke-sprites.jpg?raw=true");
     background-repeat: no-repeat;
-    
     background-size: 80vh;
   }
   #list{
@@ -117,13 +128,13 @@ footer {
   }
   footer {
     grid-column-start: 1;
-    grid-column-end: 4; 
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column-end: end; 
+    grid-row-start: 6;
+    grid-row-end: 7;
 
     height: 100px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
   }
 }

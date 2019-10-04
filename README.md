@@ -26,6 +26,15 @@ Fork and clone https://github.com/PurpleTatsu/Hidden-Objects-Language-Game
 I created an array using Math.random to generate seven Pokemon ids, as they would appear on the Pokemon API. From there I created a for loop so I could call a random Pokemon seven times. Then I created and appended divs and a list for each Pokemon. I used a click function to erase Pokemon after clicking, and another to track the score.
 
 ### Issues
-Game is not compatible for multiple media queries and barely compatible for desktop use.
-Sprites are stationary in a line, and locations are not randomly generated.
-Problems with background image functioning with sprites.
+#### Struggles you encountered and how you solved them
+Originally I had seven different calls to the API to generate the Pokemon and could not figure out how to make the function more concise. I sat down with a friend who had me write pseudo-code and ELI5 what I was expecting vs what I was getting. From there I realized I could build an array with random numbers using Math, and then create a loop with the API.
+
+I was also unable to remove the sprites after being clicked after trying all number of suggestions found online, until the IA noticed I had extra code in my function which fixed my issue.
+
+#### Problems you weren’t able to solve
+I was not able to animate or independently move the Pokemon sprites (divs). I focused my week on calling the Pokemon, making sure they generated onto the website correctly, were clickable and disappeared after clicking. 
+
+I also could not insert the environment (PokeCenter) image into the html without messing up the sprite images, and put it in the CSS as a background instead. This went on to affect my media query design.
+
+#### Code that you are proud of
+ I'm happy with the array and loop I created that generates random numbers to correspond to the Pokemon's IDs in the API, and then appends them to a list and div. Originally I had written out seven calls to the API to get an ID.
