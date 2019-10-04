@@ -7,7 +7,7 @@ body{
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto ;
 }
 #house{
-  background: url("/Users/Tatsu/Downloads/pokesprites/poke-sprites.jpg");
+  background: url("https://github.com/PurpleTatsu/Hidden-Objects-Language-Game/blob/master/images/poke-sprites.jpg?raw=true");
   background-repeat: no-repeat;
   background-size: 120vh;
   grid-column-start: 1;
@@ -97,7 +97,7 @@ footer {
     width: 90px;
   }
   #house{
-    background: url("https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/71376424_10157607557185789_211395034723909632_o.jpg?_nc_cat=108&_nc_oc=AQkz1ISfFIBUqCzSy6e1wnkxQv54h84uqcxxFsaMSgXbvb6YaTnICcbnBJELo6b6C_blQtDQLGlQ9-J4D9zrdCnd&_nc_ht=scontent-iad3-1.xx&oh=29a2dc120f876656cabaea8257174356&oe=5E2E6EBC");
+    background: url("https://github.com/PurpleTatsu/Hidden-Objects-Language-Game/blob/master/images/poke-sprites.jpg?raw=true");
     background-repeat: no-repeat;
     
     background-size: 80vh;
