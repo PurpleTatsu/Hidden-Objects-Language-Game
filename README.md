@@ -7,14 +7,15 @@ players gain points to win. The game uses HTML, CSS, and JS.
 Pokemon API to randomly generate Pokemon sprites and attached names.
 
 ### Features
-1) Score
-2) Pokemon sprites
-3) List of Pokemon to find
-4) Background environment image
+1. Score
+2. Pokemon sprites
+3. List of Pokemon to find
+4. Background environment image
 
 ### Stretch goals 
-1) Location of Pokemon is truly randomized
-2) Additional Pokemon added/additional difficulty levels
+1. Location of Pokemon is truly randomized
+2. Additional Pokemon added/additional difficulty levels
+3. Additional Pokemon can be randomly generated as background characters and are not clickable, to increas difficulty and replay.
 
 ### Link
 http://kg-project-one.surge.sh/
